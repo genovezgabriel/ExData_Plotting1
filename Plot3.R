@@ -18,7 +18,7 @@ data$Global_active_power <- as.numeric(data$Global_active_power)
 ## Subset the first two days in February, 2007
 twodayperiod <- subset(data, Date == "2007-02-01" | Date =="2007-02-02")
 
-## plot "Plot 2" and save the .PNG
+## plot "Plot 3" and save the .PNG
 png("plot3.png", width=480, height=480)
 with(twodayperiod, plot(dateANDtime, Sub_metering_1, 
                         xlab="Day", 
